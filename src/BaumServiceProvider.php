@@ -56,12 +56,5 @@ class BaumServiceProvider extends ServiceProvider
      */
     protected function registerCommands()
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                Console\MakeMigrationCommand::class,
-                Console\MakeModelCommand::class,
-                Console\VersionCommand::class
-            ]);
-        }
     }
 }
